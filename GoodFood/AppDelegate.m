@@ -22,15 +22,11 @@
     [Parse enableLocalDatastore];
     
     // Initialize Parse.
-    [Parse setApplicationId:@"VBZYnaRtkmQBeKQoPJPYea9dYQghLQtRw0fWvNwb"
-                  clientKey:@"OS0IA3nofau4qO2EZCe1xe0N5OOdx0aj8eU9Y4t1"];
+    [Parse setApplicationId:@"HGYmJuRDDbCDq8xLeXJfjvwKfBVHJojY6ZizLOlU"
+                  clientKey:@"QDzF8D5nFEEIlavZIhhk7AT4swKclPRwyI5bybo1"];
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
     
     
     return YES;

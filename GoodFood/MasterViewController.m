@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "ListingManager.h"
 
 @interface MasterViewController ()
 
@@ -27,6 +28,14 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(goToCreationScreen)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    NSLog(@"Getting location");
+    [[ListingManager Manager] getSortedListingsWithinFiftyMiles:^(NSArray *listings) {
+        for (Listing *li in listings) {
+            NSLog(@"Name: %@",li.title);
+        }
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
