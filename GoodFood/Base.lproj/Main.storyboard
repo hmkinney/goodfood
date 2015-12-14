@@ -845,24 +845,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iUp-Kj-iqE" id="scV-w9-mFs">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFZ-Ti-zEO">
-                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Servings">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-Ff-GCm">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular" fixedFrame="YES">
-                                                        <rect key="frame" x="270" y="8" width="60" height="30"/>
+                                                        <rect key="frame" x="267" y="11" width="67" height="21"/>
                                                     </variation>
-                                                </button>
+                                                </label>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="dFZ-Ti-zEO"/>
+                                                    <exclude reference="Fwy-Ff-GCm"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
                                                 <mask key="subviews">
-                                                    <include reference="dFZ-Ti-zEO"/>
+                                                    <include reference="Fwy-Ff-GCm"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -873,24 +873,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bsa-0a-vZR" id="EFv-9s-0YZ">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isM-RL-Qkj">
-                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Pounds">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16r-yp-P7F">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular" fixedFrame="YES">
-                                                        <rect key="frame" x="274" y="7" width="53" height="30"/>
+                                                        <rect key="frame" x="271" y="11" width="59" height="21"/>
                                                     </variation>
-                                                </button>
+                                                </label>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="isM-RL-Qkj"/>
+                                                    <exclude reference="16r-yp-P7F"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
                                                 <mask key="subviews">
-                                                    <include reference="isM-RL-Qkj"/>
+                                                    <include reference="16r-yp-P7F"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -901,24 +901,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OQm-0t-Lwp" id="Y4p-AV-7h9">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLw-7s-mkp">
-                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Individual Count">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAq-P5-YK2">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular" fixedFrame="YES">
-                                                        <rect key="frame" x="244" y="5" width="112" height="30"/>
+                                                        <rect key="frame" x="277" y="11" width="47" height="21"/>
                                                     </variation>
-                                                </button>
+                                                </label>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="WLw-7s-mkp"/>
+                                                    <exclude reference="YAq-P5-YK2"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
                                                 <mask key="subviews">
-                                                    <include reference="WLw-7s-mkp"/>
+                                                    <include reference="YAq-P5-YK2"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -929,24 +929,46 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q0e-PU-wxY" id="Pb6-2c-B3K">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the numerical quantity of your donation below." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-dZ-q1c">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the numerical quantity of your donation:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-dZ-q1c">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="351" id="gXJ-B4-TH7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular" fixedFrame="YES">
-                                                        <rect key="frame" x="73" y="11" width="455" height="21"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="gXJ-B4-TH7"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular">
+                                                        <mask key="constraints">
+                                                            <include reference="gXJ-B4-TH7"/>
+                                                        </mask>
                                                     </variation>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HPG-dZ-q1c" firstAttribute="centerX" secondItem="Pb6-2c-B3K" secondAttribute="centerX" id="Olh-Cl-zZa"/>
+                                                <constraint firstItem="HPG-dZ-q1c" firstAttribute="centerY" secondItem="Pb6-2c-B3K" secondAttribute="centerY" id="YI6-TP-Z3T"/>
+                                            </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="HPG-dZ-q1c"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="Olh-Cl-zZa"/>
+                                                    <exclude reference="YI6-TP-Z3T"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
                                                 <mask key="subviews">
                                                     <include reference="HPG-dZ-q1c"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="Olh-Cl-zZa"/>
+                                                    <include reference="YI6-TP-Z3T"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -957,23 +979,87 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xsV-7E-JJy" id="13l-gA-sv9">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lzz-To-5HB">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lzz-To-5HB">
                                                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="114" id="93E-Me-EKJ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <variation key="heightClass=regular" fixedFrame="YES">
-                                                        <rect key="frame" x="125" y="7" width="351" height="30"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="93E-Me-EKJ"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="237" y="8" width="114" height="30"/>
+                                                        <mask key="constraints">
+                                                            <include reference="93E-Me-EKJ"/>
+                                                        </mask>
                                                     </variation>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Lzz-To-5HB" firstAttribute="top" secondItem="13l-gA-sv9" secondAttribute="topMargin" id="8Mf-pU-4wP"/>
+                                                <constraint firstAttribute="centerX" secondItem="Lzz-To-5HB" secondAttribute="centerX" id="dgA-xZ-qCp"/>
+                                            </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="Lzz-To-5HB"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="8Mf-pU-4wP"/>
+                                                    <exclude reference="dgA-xZ-qCp"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
                                                 <mask key="subviews">
                                                     <include reference="Lzz-To-5HB"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="8Mf-pU-4wP"/>
+                                                    <include reference="dgA-xZ-qCp"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lWf-Y3-FUH">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lWf-Y3-FUH" id="WRe-cP-B48">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWs-la-x86">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" title="Done">
+                                                        <color key="titleColor" red="0.15723342219145883" green="0.71563289141414144" blue="0.10057895757308775" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HWs-la-x86" firstAttribute="top" secondItem="WRe-cP-B48" secondAttribute="topMargin" constant="-1" id="2ao-hF-Amp"/>
+                                                <constraint firstAttribute="centerX" secondItem="HWs-la-x86" secondAttribute="centerX" id="9Xc-sg-YhO"/>
+                                                <constraint firstItem="HWs-la-x86" firstAttribute="leading" secondItem="WRe-cP-B48" secondAttribute="leading" constant="277" id="CrH-Wc-oQa"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="HWs-la-x86"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="2ao-hF-Amp"/>
+                                                    <exclude reference="9Xc-sg-YhO"/>
+                                                    <exclude reference="CrH-Wc-oQa"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="subviews">
+                                                    <include reference="HWs-la-x86"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="2ao-hF-Amp"/>
+                                                    <include reference="9Xc-sg-YhO"/>
+                                                    <include reference="CrH-Wc-oQa"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
