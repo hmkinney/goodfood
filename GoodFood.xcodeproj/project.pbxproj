@@ -33,6 +33,8 @@
 		79AB45D71C1A29D7002C92C0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB45D61C1A29D7002C92C0 /* libz.dylib */; };
 		79AB45D91C1A29F0002C92C0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB45D81C1A29F0002C92C0 /* libsqlite3.dylib */; };
 		79AB45DD1C1A2BF7002C92C0 /* CreateFoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB45DC1C1A2BF7002C92C0 /* CreateFoodTableViewController.m */; };
+		B7540BA11C1F56F600D752EC /* Listing.m in Sources */ = {isa = PBXBuildFile; fileRef = B7540BA01C1F56F600D752EC /* Listing.m */; };
+		B7540BA41C1F723B00D752EC /* ListingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7540BA31C1F723B00D752EC /* ListingManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		79AB45DB1C1A2BF7002C92C0 /* CreateFoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateFoodTableViewController.h; sourceTree = "<group>"; };
 		79AB45DC1C1A2BF7002C92C0 /* CreateFoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateFoodTableViewController.m; sourceTree = "<group>"; };
 		79DBBF8C1C1F467E00753DDA /* GoodFood */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoodFood; sourceTree = "<group>"; };
+		B7540B9F1C1F56F600D752EC /* Listing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Listing.h; sourceTree = "<group>"; };
+		B7540BA01C1F56F600D752EC /* Listing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Listing.m; sourceTree = "<group>"; };
+		B7540BA21C1F723B00D752EC /* ListingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingManager.h; sourceTree = "<group>"; };
+		B7540BA31C1F723B00D752EC /* ListingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,10 @@
 				79AB458E1C1A27D5002C92C0 /* Supporting Files */,
 				791CFA481C1F4E1B008E933C /* QuantityTableViewController.h */,
 				791CFA491C1F4E1B008E933C /* QuantityTableViewController.m */,
+				B7540B9F1C1F56F600D752EC /* Listing.h */,
+				B7540BA01C1F56F600D752EC /* Listing.m */,
+				B7540BA21C1F723B00D752EC /* ListingManager.h */,
+				B7540BA31C1F723B00D752EC /* ListingManager.m */,
 			);
 			path = GoodFood;
 			sourceTree = "<group>";
@@ -310,7 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7540BA41C1F723B00D752EC /* ListingManager.m in Sources */,
 				79AB45941C1A27D5002C92C0 /* AppDelegate.m in Sources */,
+				B7540BA11C1F56F600D752EC /* Listing.m in Sources */,
 				79AB45971C1A27D5002C92C0 /* MasterViewController.m in Sources */,
 				79AB45DD1C1A2BF7002C92C0 /* CreateFoodTableViewController.m in Sources */,
 				79AB45911C1A27D5002C92C0 /* main.m in Sources */,
