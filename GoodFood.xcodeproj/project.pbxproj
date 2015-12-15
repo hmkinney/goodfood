@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		791CFA4A1C1F4E1B008E933C /* QuantityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791CFA491C1F4E1B008E933C /* QuantityTableViewController.m */; };
+		794D2A6F1C1FB30900598426 /* FoodTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794D2A6E1C1FB30900598426 /* FoodTypeTableViewController.m */; };
 		79AB45911C1A27D5002C92C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB45901C1A27D5002C92C0 /* main.m */; };
 		79AB45941C1A27D5002C92C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB45931C1A27D5002C92C0 /* AppDelegate.m */; };
 		79AB45971C1A27D5002C92C0 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB45961C1A27D5002C92C0 /* MasterViewController.m */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		791CFA481C1F4E1B008E933C /* QuantityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuantityTableViewController.h; sourceTree = "<group>"; };
 		791CFA491C1F4E1B008E933C /* QuantityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuantityTableViewController.m; sourceTree = "<group>"; };
+		794D2A6D1C1FB30900598426 /* FoodTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTypeTableViewController.h; sourceTree = "<group>"; };
+		794D2A6E1C1FB30900598426 /* FoodTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTypeTableViewController.m; sourceTree = "<group>"; };
 		79AB458B1C1A27D5002C92C0 /* GoodFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AB458F1C1A27D5002C92C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79AB45901C1A27D5002C92C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		79AB45821C1A27D5002C92C0 = {
 			isa = PBXGroup;
 			children = (
+				794D2A6D1C1FB30900598426 /* FoodTypeTableViewController.h */,
+				794D2A6E1C1FB30900598426 /* FoodTypeTableViewController.m */,
 				79AB458D1C1A27D5002C92C0 /* GoodFood */,
 				79AB45AA1C1A27D6002C92C0 /* GoodFoodTests */,
 				79AB458C1C1A27D5002C92C0 /* Products */,
@@ -326,6 +331,7 @@
 				79AB45971C1A27D5002C92C0 /* MasterViewController.m in Sources */,
 				79AB45DD1C1A2BF7002C92C0 /* CreateFoodTableViewController.m in Sources */,
 				79AB45911C1A27D5002C92C0 /* main.m in Sources */,
+				794D2A6F1C1FB30900598426 /* FoodTypeTableViewController.m in Sources */,
 				791CFA4A1C1F4E1B008E933C /* QuantityTableViewController.m in Sources */,
 				79AB459A1C1A27D5002C92C0 /* DetailViewController.m in Sources */,
 			);
