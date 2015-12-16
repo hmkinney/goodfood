@@ -8,6 +8,35 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol FoodTypeDelegate
+
+-(void)setFoodType:(NSString *)foodType;
+@end
+
 @interface FoodTypeTableViewController : UITableViewController
+
+
+@property (weak, nonatomic) IBOutlet UILabel *selectTypeLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *readyToEatLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *frozenLabel;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *nonPerishableLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *produceLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *bakedGoodsLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *doneLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *foodTypeInfoLabel;
+
+
 
 @end

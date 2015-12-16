@@ -15,6 +15,10 @@
 
 @implementation QuantityTableViewController
 
+NSString *postTitle = self.numericalQuantityTextField.text;
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

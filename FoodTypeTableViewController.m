@@ -40,6 +40,7 @@
         for (NSInteger i = 1; i<6; i++) {
             NSIndexPath *ip = [NSIndexPath indexPathForRow:i inSection:0];
             UITableViewCell *selCell = [tableView cellForRowAtIndexPath:ip];
+            selCell.contentView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
             if (i == indexPath.row) {
                 selCell.accessoryType = UITableViewCellAccessoryCheckmark;
                 self.selectedChoice = self.choices[i-1];

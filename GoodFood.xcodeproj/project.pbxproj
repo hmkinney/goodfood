@@ -33,7 +33,7 @@
 		79AB45D21C1A291D002C92C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB45D11C1A291D002C92C0 /* SystemConfiguration.framework */; };
 		79AB45D71C1A29D7002C92C0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB45D61C1A29D7002C92C0 /* libz.dylib */; };
 		79AB45D91C1A29F0002C92C0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB45D81C1A29F0002C92C0 /* libsqlite3.dylib */; };
-		79AB45DD1C1A2BF7002C92C0 /* CreateFoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB45DC1C1A2BF7002C92C0 /* CreateFoodTableViewController.m */; };
+		79AB45DD1C1A2BF7002C92C0 /* FoodEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB45DC1C1A2BF7002C92C0 /* FoodEntryViewController.m */; };
 		B7540BA11C1F56F600D752EC /* Listing.m in Sources */ = {isa = PBXBuildFile; fileRef = B7540BA01C1F56F600D752EC /* Listing.m */; };
 		B7540BA41C1F723B00D752EC /* ListingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7540BA31C1F723B00D752EC /* ListingManager.m */; };
 /* End PBXBuildFile section */
@@ -51,8 +51,8 @@
 /* Begin PBXFileReference section */
 		791CFA481C1F4E1B008E933C /* QuantityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuantityTableViewController.h; sourceTree = "<group>"; };
 		791CFA491C1F4E1B008E933C /* QuantityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuantityTableViewController.m; sourceTree = "<group>"; };
-		794D2A6D1C1FB30900598426 /* FoodTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTypeTableViewController.h; sourceTree = "<group>"; };
-		794D2A6E1C1FB30900598426 /* FoodTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTypeTableViewController.m; sourceTree = "<group>"; };
+		794D2A6D1C1FB30900598426 /* FoodTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodTypeTableViewController.h; path = ../FoodTypeTableViewController.h; sourceTree = "<group>"; };
+		794D2A6E1C1FB30900598426 /* FoodTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTypeTableViewController.m; path = ../FoodTypeTableViewController.m; sourceTree = "<group>"; };
 		79AB458B1C1A27D5002C92C0 /* GoodFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AB458F1C1A27D5002C92C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79AB45901C1A27D5002C92C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 		79AB45D31C1A292F002C92C0 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		79AB45D61C1A29D7002C92C0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		79AB45D81C1A29F0002C92C0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		79AB45DB1C1A2BF7002C92C0 /* CreateFoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateFoodTableViewController.h; sourceTree = "<group>"; };
-		79AB45DC1C1A2BF7002C92C0 /* CreateFoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateFoodTableViewController.m; sourceTree = "<group>"; };
+		79AB45DB1C1A2BF7002C92C0 /* FoodEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntryViewController.h; sourceTree = "<group>"; };
+		79AB45DC1C1A2BF7002C92C0 /* FoodEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntryViewController.m; sourceTree = "<group>"; };
 		79DBBF8C1C1F467E00753DDA /* GoodFood */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoodFood; sourceTree = "<group>"; };
 		B7540B9F1C1F56F600D752EC /* Listing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Listing.h; sourceTree = "<group>"; };
 		B7540BA01C1F56F600D752EC /* Listing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Listing.m; sourceTree = "<group>"; };
@@ -131,8 +131,6 @@
 		79AB45821C1A27D5002C92C0 = {
 			isa = PBXGroup;
 			children = (
-				794D2A6D1C1FB30900598426 /* FoodTypeTableViewController.h */,
-				794D2A6E1C1FB30900598426 /* FoodTypeTableViewController.m */,
 				79AB458D1C1A27D5002C92C0 /* GoodFood */,
 				79AB45AA1C1A27D6002C92C0 /* GoodFoodTests */,
 				79AB458C1C1A27D5002C92C0 /* Products */,
@@ -151,11 +149,13 @@
 		79AB458D1C1A27D5002C92C0 /* GoodFood */ = {
 			isa = PBXGroup;
 			children = (
+				794D2A6D1C1FB30900598426 /* FoodTypeTableViewController.h */,
+				794D2A6E1C1FB30900598426 /* FoodTypeTableViewController.m */,
 				79AB45DA1C1A2BBA002C92C0 /* Frameworks */,
 				79AB45921C1A27D5002C92C0 /* AppDelegate.h */,
 				79AB45931C1A27D5002C92C0 /* AppDelegate.m */,
-				79AB45DB1C1A2BF7002C92C0 /* CreateFoodTableViewController.h */,
-				79AB45DC1C1A2BF7002C92C0 /* CreateFoodTableViewController.m */,
+				79AB45DB1C1A2BF7002C92C0 /* FoodEntryViewController.h */,
+				79AB45DC1C1A2BF7002C92C0 /* FoodEntryViewController.m */,
 				79AB45951C1A27D5002C92C0 /* MasterViewController.h */,
 				79AB45961C1A27D5002C92C0 /* MasterViewController.m */,
 				79AB45981C1A27D5002C92C0 /* DetailViewController.h */,
@@ -329,7 +329,7 @@
 				79AB45941C1A27D5002C92C0 /* AppDelegate.m in Sources */,
 				B7540BA11C1F56F600D752EC /* Listing.m in Sources */,
 				79AB45971C1A27D5002C92C0 /* MasterViewController.m in Sources */,
-				79AB45DD1C1A2BF7002C92C0 /* CreateFoodTableViewController.m in Sources */,
+				79AB45DD1C1A2BF7002C92C0 /* FoodEntryViewController.m in Sources */,
 				79AB45911C1A27D5002C92C0 /* main.m in Sources */,
 				794D2A6F1C1FB30900598426 /* FoodTypeTableViewController.m in Sources */,
 				791CFA4A1C1F4E1B008E933C /* QuantityTableViewController.m in Sources */,
