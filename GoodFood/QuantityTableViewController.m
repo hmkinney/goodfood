@@ -15,7 +15,8 @@
 
 @implementation QuantityTableViewController
 
-NSString *postTitle = self.numericalQuantityTextField.text;
+//NSString *postTitle = self.numericalQuantityTextField.text;
+//Above does not recognize 'self', even though numericalQuantityTextField has an equivalent text field in the appropriate slide!
 
 
 

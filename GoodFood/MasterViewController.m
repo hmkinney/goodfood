@@ -35,7 +35,6 @@
             NSLog(@"Name: %@",li.title);
         }
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {
