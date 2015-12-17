@@ -21,6 +21,30 @@
     [super awakeFromNib];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    NSLog(@"Getting location");
+    [[ListingManager Manager] getSortedListingsWithinFiftyMiles:^(NSArray *listings) {
+        if (!self.objects) {
+            self.objects = [[NSMutableArray alloc] init];
+        }
+        for (Listing *li in listings) {
+            //self.tableView for the tableView itself, self.objects for the array of objects tied to its cells
+            if(listings.count != self.objects.count)
+            {
+            NSString *listtext = [NSString stringWithFormat:@"%@: %@", li.title, li.location];
+            [self.objects insertObject:listtext atIndex:0];
+            //[self.objects addObject: listtext];
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+            [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            }
+            NSLog(@"Name: %@",li.title);
+            NSLog(@"Location: %@",li.location);
+        }
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -35,7 +59,6 @@
             NSLog(@"Name: %@",li.title);
         }
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {
