@@ -15,6 +15,8 @@
 
 @interface QuantityTableViewController : UITableViewController
 
+@property (nonatomic, strong) id<QuantityDelegate> delegate;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *unitMeasurementLabel;
 

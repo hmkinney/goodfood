@@ -554,7 +554,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="D3b-Jg-gi6" kind="show" id="BCV-lo-c2j"/>
+                                            <segue destination="D3b-Jg-gi6" kind="show" identifier="displayQuantityView" id="BCV-lo-c2j"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NLO-qG-dgR">
@@ -1008,9 +1008,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="8" y="11" width="584" height="21"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -1429,37 +1426,33 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lWf-Y3-FUH" id="WRe-cP-B48">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWs-la-x86">
-                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Done">
-                                                        <color key="titleColor" red="0.15723342219145883" green="0.71563289141414144" blue="0.10057895757308775" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTt-Rc-s5g">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.1572334222" green="0.71563289139999997" blue="0.1005789576" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="HWs-la-x86" firstAttribute="top" secondItem="WRe-cP-B48" secondAttribute="topMargin" constant="-1" id="2ao-hF-Amp"/>
-                                                <constraint firstAttribute="centerX" secondItem="HWs-la-x86" secondAttribute="centerX" id="9Xc-sg-YhO"/>
-                                                <constraint firstItem="HWs-la-x86" firstAttribute="leading" secondItem="WRe-cP-B48" secondAttribute="leading" constant="277" id="CrH-Wc-oQa"/>
+                                                <constraint firstItem="XTt-Rc-s5g" firstAttribute="centerY" secondItem="WRe-cP-B48" secondAttribute="centerY" id="K2V-ia-VHS"/>
+                                                <constraint firstItem="XTt-Rc-s5g" firstAttribute="centerX" secondItem="WRe-cP-B48" secondAttribute="centerX" id="hUk-07-PhJ"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="HWs-la-x86"/>
+                                                    <exclude reference="XTt-Rc-s5g"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="2ao-hF-Amp"/>
-                                                    <exclude reference="9Xc-sg-YhO"/>
-                                                    <exclude reference="CrH-Wc-oQa"/>
+                                                    <exclude reference="K2V-ia-VHS"/>
+                                                    <exclude reference="hUk-07-PhJ"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
                                                 <mask key="subviews">
-                                                    <include reference="HWs-la-x86"/>
+                                                    <include reference="XTt-Rc-s5g"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="2ao-hF-Amp"/>
-                                                    <include reference="9Xc-sg-YhO"/>
-                                                    <include reference="CrH-Wc-oQa"/>
+                                                    <include reference="K2V-ia-VHS"/>
+                                                    <include reference="hUk-07-PhJ"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1474,7 +1467,6 @@
                     </tableView>
                     <connections>
                         <outlet property="countLabel" destination="YAq-P5-YK2" id="riU-Pi-msd"/>
-                        <outlet property="doneLabel" destination="HWs-la-x86" id="GKq-m3-aIg"/>
                         <outlet property="numericalQuantityLabel" destination="HPG-dZ-q1c" id="vyh-ZI-vSu"/>
                         <outlet property="numericalQuantityTextField" destination="Lzz-To-5HB" id="AES-id-cCx"/>
                         <outlet property="poundsLabel" destination="16r-yp-P7F" id="BGH-hA-73l"/>
@@ -1484,7 +1476,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQX-4k-acH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1630" y="1807"/>
+            <point key="canvasLocation" x="1630" y="1806.75"/>
         </scene>
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">

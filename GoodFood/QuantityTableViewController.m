@@ -15,9 +15,6 @@
 
 @implementation QuantityTableViewController
 
-NSString *postTitle = self.numericalQuantityTextField.text;
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,19 +22,14 @@ NSString *postTitle = self.numericalQuantityTextField.text;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     self.choices = [NSArray arrayWithObjects:@"Servings", @"Pounds", @"Count", nil];
-    self.selectedChoice = @"";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"index is?: %@",[NSNumber numberWithInteger:indexPath.row]);
     if (indexPath.row < 4  && indexPath.row > 0) {
         for (NSInteger i = 1; i<4; i++) {
             NSIndexPath *ip = [NSIndexPath indexPathForRow:i inSection:0];
@@ -49,6 +41,37 @@ NSString *postTitle = self.numericalQuantityTextField.text;
             }else{
                 selCell.accessoryType = UITableViewCellAccessoryNone;
             }
+        }
+        
+    }else if(indexPath.row == 6){
+        NSLog(@"HELLO?!");
+        NSNumberFormatter *nf = [[NSNumberFormatter alloc]init];
+        NSNumber *inputtedQuantity = [nf numberFromString:self.numericalQuantityTextField.text];
+        BOOL correctNumber = NO;
+        BOOL correctUnit = NO;
+        
+        if (!inputtedQuantity) {
+            [self.numericalQuantityLabel setTextColor:[UIColor redColor]];
+        }else{
+            [self.numericalQuantityLabel setTextColor:[UIColor blackColor]];
+            
+            // They entered data correctly
+            correctNumber = YES;
+            
+            [self.delegate setQuantityNumber:inputtedQuantity];
+        }
+        
+        if (!self.selectedChoice) {
+            [self.unitMeasurementLabel setTextColor:[UIColor redColor]];
+            
+        }else{
+            [self.unitMeasurementLabel setTextColor:[UIColor blackColor]];
+            correctUnit = YES;
+            [self.delegate setQuantityUnits:self.selectedChoice];
+        }
+        
+        if (correctUnit && correctNumber) {
+            [self.navigationController popViewControllerAnimated:YES];
         }
         
     }

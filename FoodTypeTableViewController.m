@@ -10,9 +10,16 @@
 
 
 @interface FoodTypeTableViewController ()
-@property (nonatomic, strong) NSArray *choices;
+
 @property (nonatomic, strong) NSString *selectedChoice;
+@property (nonatomic, strong) NSArray *foodTypeChoices;
+@property (nonatomic) NSString *selectedIndex;
+
+
+
 @end
+
+
 
 @implementation FoodTypeTableViewController
 
@@ -22,8 +29,7 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
 
-    self.choices = [NSArray arrayWithObjects:@"Ready-to-Eat", @"Frozen", @"Non-perishable", @"Produce", @"Baked goods", nil];
-    self.selectedChoice = @"";
+    self.foodTypeChoices = [NSArray arrayWithObjects:@"Ready-to-Eat", @"Frozen", @"Non-perishable", @"Produce", @"Baked goods", nil];
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -43,15 +49,26 @@
             selCell.contentView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
             if (i == indexPath.row) {
                 selCell.accessoryType = UITableViewCellAccessoryCheckmark;
-                self.selectedChoice = self.choices[i-1];
+                self.selectedChoice = self.foodTypeChoices[i-1];
                 NSLog(@"Selected: %@",self.selectedChoice);
             }else{
                 selCell.accessoryType = UITableViewCellAccessoryNone;
+        
+//                NSString *selectedFoodType = self.selectedChoice[self.selectedIndex];
+//                
+//                [_delegate setFoodType: selectedFoodType]
             }
         }
-        
+    }else if(indexPath.row == 6){
+        NSLog(@"DONE BUTTON TAPPED");
+        if (!self.selectedChoice) {
+            [self.selectTypeLabel setTextColor:[UIColor redColor]];
+        }else{
+            [self.selectTypeLabel setTextColor:[UIColor blackColor]];
+            [self.delegate setFoodType:self.selectedChoice];
+            [self.navigationController popViewControllerAnimated:YES];
+        }
     }
-
 }
 
 

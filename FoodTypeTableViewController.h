@@ -15,6 +15,7 @@
 
 @interface FoodTypeTableViewController : UITableViewController
 
+@property (nonatomic, strong) id<FoodTypeDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UILabel *selectTypeLabel;
 

@@ -16,6 +16,10 @@
 -(void)setQuantityNumber:(NSNumber *)quantNum;
 -(void)setFoodType:(NSString *)foodType;
 
+@property (nonatomic, strong) NSNumber *quantityNumber;
+@property (nonatomic, strong) NSString *quantityUnits;
+@property (nonatomic, strong) NSString *foodType;
+
 @property (weak, nonatomic) IBOutlet UILabel *postTitleLabel;
 
 
@@ -42,7 +46,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UITextField *contactNumTextField;
-
 
 
 @property (weak, nonatomic) IBOutlet UILabel *foodTypeLabel;

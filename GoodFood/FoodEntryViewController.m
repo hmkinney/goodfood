@@ -28,11 +28,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 14) {
         NSLog(@"Post button tapped");
@@ -47,10 +42,16 @@
 }
 
 
-
-
-
-
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.identifier isEqualToString:@"displayQuantityView"]) {
+        QuantityTableViewController *dest = (QuantityTableViewController *)segue.destinationViewController;
+        dest.delegate = self;
+ 
+    } else{
+        FoodTypeTableViewController *ftvc = (FoodTypeTableViewController *)segue.destinationViewController;
+        ftvc.delegate = self;
+    }
+}
 
 @end
